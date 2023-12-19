@@ -29,6 +29,6 @@ export function topThreeWords(text: string) {
         ? Object.entries(count)
             .sort((a, b) => b[1] - a[1])
             .slice(0, 3)
-        .map(entry => entry[0])
+            .map(entry => entry[0])
         : [];
 }
